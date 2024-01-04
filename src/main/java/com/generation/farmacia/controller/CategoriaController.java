@@ -50,7 +50,6 @@ public class CategoriaController {
 	            .findAllByDescricaoContainingIgnoreCase(descricao));
 	    }
 	    
-	    
 	    @PostMapping
 	    public ResponseEntity<Categoria> post(@Valid @RequestBody Categoria categoria){
 	        return ResponseEntity.status(HttpStatus.CREATED)
